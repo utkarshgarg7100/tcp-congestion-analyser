@@ -1,1 +1,50 @@
+# macOS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Large archive files
+*.zip
+*.tar.gz
+*.tar
+*.rar
+
+# Build directories and artifacts
+ns-3/build/
+ns-3/build-*/
+ns-3/cmake-cache/
+ns-3/.lock-ns3_*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Generated results (optional - uncomment if you don't want to track these)
+# ns-3/results*.csv
+# ns-3/*_comparison.png
+# ns-3/summary_statistics.csv
+# ns-3/fairness_analysis.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# NS-3 specific
+ns-3/.ns3rc
+ns-3/version.cache
