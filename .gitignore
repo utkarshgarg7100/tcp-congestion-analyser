@@ -11,11 +11,16 @@
 *.tar
 *.rar
 
-# Build directories and artifacts
-ns-3/build/
-ns-3/build-*/
-ns-3/cmake-cache/
-ns-3/.lock-ns3_*
+# Build directories and artifacts (if you need to track NS-3 source)
+# ns-3/build/
+# ns-3/build-*/
+# ns-3/cmake-cache/
+# ns-3/.lock-ns3_*
+# ns-3/bindings/
+# ns-3/doc/
+# ns-3/testpy-output/
+# ns-3/utils/
+# ns-3/third-party/
 
 # Python
 __pycache__/
@@ -45,6 +50,9 @@ ENV/
 *.tmp
 *.temp
 
-# NS-3 specific
-ns-3/.ns3rc
-ns-3/version.cache
+# NS-3 specific - exclude entire directory if it's a dependency
+ns-3/
+
+# If you need to track NS-3, uncomment these instead:
+# ns-3/.ns3rc
+# ns-3/version.cache
