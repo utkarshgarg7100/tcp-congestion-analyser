@@ -2,6 +2,22 @@
 #!/usr/bin/env python3
 """
 TCP Congestion Control Performance Visualization
+
+This script analyzes simulation results from NS-3 TCP experiments and generates
+comprehensive performance visualizations comparing different TCP variants.
+
+Features:
+- Throughput comparison across TCP variants
+- Delay analysis and packet loss metrics  
+- Link utilization and fairness analysis
+- Statistical significance testing
+- Publication-quality charts
+
+Input: results_corrected.csv (from NS-3 simulation)
+Output: 6 PNG charts + statistical analysis
+
+Author: [Your Name]
+Dependencies: pandas, matplotlib, seaborn, numpy
 """
 
 import pandas as pd

@@ -1,3 +1,24 @@
+/*
+ * TCP Congestion Control Performance Analysis
+ * 
+ * This simulation compares different TCP congestion control algorithms
+ * (NewReno, Cubic, BBR) using a dumbbell network topology.
+ * 
+ * Network Topology:
+ *   Senders --- Router1 ===== Router2 --- Receivers
+ *              (fast)    (bottleneck)    (fast)
+ * 
+ * Metrics Analyzed:
+ * - Throughput (Mbps)
+ * - End-to-end delay
+ * - Packet loss rate
+ * - Link utilization
+ * - Fairness index
+ * 
+ * Author: [Your Name]
+ * Course: Network Performance Analysis
+ */
+
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
 #include "ns3/internet-module.h"
